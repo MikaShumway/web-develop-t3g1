@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b09913b6fb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/palette.scss"> 
+    <link rel="stylesheet" type="text/css" href="css/map.css"> 
+    <title>map</title>
+</head>
+<body>
+    <div>
+        <header class="top">
+            <nav class="top">
+                <div id="logo">
+                    <img src="" alt="logo" sizes="" srcset="">
+                </div>
+                <ul id="textBox">
+                    <li class="item1">Home<a href="#topic1"></a></li>
+                    <li class="item2">Map Tourist<a href="#topic2"></a></li>
+                    <li class="item3">Service<a href="#topic3"></a></li>
+                </ul>
+                <div id="searchBox">
+                    <p>search</p>
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </div>
+            </nav>
+        </header>
+        <section class="mid">
+            <div class="left">
+                <div id="filter" class="dropdown">
+                    <button class="dropdownBtn" onclick="popdown">select tourist type</button>
+                    <div id="peopleDropdown" class="dropdownContent">
+                        <a href="#">kids recommandation</a>
+                        <a href="#">couples recommandation</a>
+                        <a href="#">elderly recommandation</a>
+                    </div>
+                </div>
+                <div id="map">
+                    <img src="pics/chuttersnap-Dt8sn0KEguA-unsplash.jpg" alt="parkmap" usemap="#parkmap" width="1000" height="750">
+                    <map name="parkmap">
+                    <area shape="circle" coords="337,300,44" href="#" onclick="scrollTo()">
+                    </map>
+                </div>
+                <div id="scenaries">
+                    <div class="scenaryCard">
+                        <div class="smallPic">
+                            <img src="pics/matt-bowden-GZc4fnQsaWQ-unsplash.jpg" alt="roller coaster" width="200">
+                        </div>
+                        <div class="scenaryIntro">
+                            <table class="info">
+                                <tr class="faciName">
+                                    <td>Name</td>
+                                    <td>facility name</td>
+                                </tr>
+                                <tr class="faciInfo">
+                                    <td>Info</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                </tr>
+                                <tr class="faciTime">
+                                    <td>Time</td>
+                                    <td>From 8:00 A.M. to 8:00 P.M.</td>
+                                </tr>
+                                <tr class="faciNotion">
+                                    <td>Notion</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="scenaryCard">
+                        <div class="smallPic">
+                            <img src="pics/romeo-a-oWblyqYzuRI-unsplash.jpg" alt="pokemon train" width="200">
+                        </div>
+                        <div class="scenaryIntro">
+                            <table class="info">
+                                <tr class="faciName">
+                                    <td>Name</td>
+                                    <td>facility name</td>
+                                </tr>
+                                <tr class="faciInfo">
+                                    <td>Info</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                </tr>
+                                <tr class="faciTime">
+                                    <td>Time</td>
+                                    <td>From 8:00 A.M. to 8:00 P.M.</td>
+                                </tr>
+                                <tr class="faciNotion">
+                                    <td>Notion</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="scenaryCard">
+                        <div class="smallPic">
+                            <img src="pics/markus-spiske-u-s3EG1QUXw-unsplash.jpg" alt="go kart" width="200">
+                        </div>
+                        <div class="scenaryIntro">
+                            <table class="info">
+                                <tr class="faciName">
+                                    <td>Name</td>
+                                    <td>facility name</td>
+                                </tr>
+                                <tr class="faciInfo">
+                                    <td>Info</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                </tr>
+                                <tr class="faciTime">
+                                    <td>Time</td>
+                                    <td>From 8:00 A.M. to 8:00 P.M.</td>
+                                </tr>
+                                <tr class="faciNotion">
+                                    <td>Notion</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="scenaryCard">
+                        <div class="smallPic">
+                            <img src="pics/bannon-morrissy-DfK0HXsfkDY-unsplash.jpg" alt="pokemon dunk" width="200">
+                        </div>
+                        <div class="scenaryIntro">
+                            <table class="info">
+                                <tr class="faciName">
+                                    <td>Name</td>
+                                    <td>facility name</td>
+                                </tr>
+                                <tr class="faciInfo">
+                                    <td>Info</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                </tr>
+                                <tr class="faciTime">
+                                    <td>Time</td>
+                                    <td>From 8:00 A.M. to 8:00 P.M.</td>
+                                </tr>
+                                <tr class="faciNotion">
+                                    <td>Notion</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div id="booking">
+                    <div class="formName">booking your tickets now!</div>
+                    <form action="" method="post">
+                        <label for="fname">date:</label><br>
+                        <input type="datetime-local" id="ticketDate">
+                        <input type="number" id="ticketNum"  min="0" max="50" step="1" value="1">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="bottom">
+            <div class="contactInfo" onclick="popupwindow()">contact us</div>
+            <div class="aboutUs" onclick="popupwindow()">about us</div>
+            <div class="shareSocial">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
