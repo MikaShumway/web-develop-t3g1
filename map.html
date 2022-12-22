@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b09913b6fb.js" crossorigin="anonymous"></script>
+    <script src="js/sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/map.css"> 
+    <title>map</title>
+</head>
+<body>
+    <header class="top">
+        <h1>Pokemon Land</h1>
+    </header>
+    <nav id="navlist">
+            <img src="assets/pics/favicon.ico" alt="logo" sizes="" srcset="">
+            <a href="#topic1">Home</a>
+            <a href="#topic2">Map Tourist</a>
+            <a href="#topic3">Service</a>
+        <!-- search bar right align -->
+        <div id="searchBox" class="search">
+            <form action="#">
+                <input type="text" placeholder="Search" name="search">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <section class="mid">
+        <div class="left">
+            <div id="filter" class="dropdown">
+                <button class="dropdownBtn" onclick="myFunction()">Find Facilities</button>
+                <div id="peopleDropdown" class="dropdownContent">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#rollercoaster">roller coaster</a>
+                    <a href="#pokemontrain">pokemon train</a>
+                    <a href="#gokart">go kart</a>
+                    <a href="#pokemondunk">pokemon dunk</a>
+                </div>
+            </div>
+            <div id="map">
+                <img src="assets/pics/chuttersnap-Dt8sn0KEguA-unsplash.jpg" alt="parkmap" usemap="#parkmap" width="1000" height="750">
+                <map name="parkmap">
+                    <area shape="circle" coords="500,500,147" href="#rollercoaster">
+                    <area shape="circle" coords="140,121,181" href="#pokemontrain">
+                    <area shape="circle" coords="355,352,37" href="#gokart">
+                    <area shape="circle" coords="761,528,47" href="#pokemondunk">
+                </map>
+            </div>
+            <div id="scenaries">
+                <div id="rollercoaster" class="scenaryCard">
+                    <div class="smallPic">
+                        <a target="_blank" href="assets/videos/roller coaster.mp4">
+                        <img src="assets/pics/matt-bowden-GZc4fnQsaWQ-unsplash.jpg" alt="roller coaster" width="200"></a>
+                    </div>
+                    <div class="scenaryIntro">
+                        <table class="info">
+                            <tr class="faciName">
+                                <td>Name</td>
+                                <td>roller coaster</td>
+                            </tr>
+                            <tr class="faciInfo">
+                                <td>Info</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                            </tr>
+                            <tr class="faciTime">
+                                <td>Time</td>
+                                <td>From 8:00 A.M. to 8:00 P.M.</td>
+                            </tr>
+                            <tr class="faciNotion">
+                                <td>Notion</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="pokemontrain" class="scenaryCard">
+                    <div class="smallPic">
+                        <a target="_blank" href="assets/videos/pokemon train.mp4"><img src="assets/pics/romeo-a-oWblyqYzuRI-unsplash.jpg" alt="pokemon train" width="200"></a>
+                    </div>
+                    <div class="scenaryIntro">
+                        <table class="info">
+                            <tr class="faciName">
+                                <td>Name</td>
+                                <td>facility name</td>
+                            </tr>
+                            <tr class="faciInfo">
+                                <td>Info</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                            </tr>
+                            <tr class="faciTime">
+                                <td>Time</td>
+                                <td>From 8:00 A.M. to 8:00 P.M.</td>
+                            </tr>
+                            <tr class="faciNotion">
+                                <td>Notion</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="gokart" class="scenaryCard">
+                    <div class="smallPic">
+                        <a target="_blank" href="assets/videos/go kart.mp4"><img src="assets/pics/markus-spiske-u-s3EG1QUXw-unsplash.jpg" alt="go kart" width="200"></a>
+                    </div>
+                    <div class="scenaryIntro">
+                        <table class="info">
+                            <tr class="faciName">
+                                <td>Name</td>
+                                <td>facility name</td>
+                            </tr>
+                            <tr class="faciInfo">
+                                <td>Info</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                            </tr>
+                            <tr class="faciTime">
+                                <td>Time</td>
+                                <td>From 8:00 A.M. to 8:00 P.M.</td>
+                            </tr>
+                            <tr class="faciNotion">
+                                <td>Notion</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="pokemondunk" class="scenaryCard">
+                    <div class="smallPic">
+                        <a target="_blank" href="assets/video/pokemon dunk.mp4"><img src="assets/pics/bannon-morrissy-DfK0HXsfkDY-unsplash.jpg" alt="pokemon dunk" width="200"></a>
+                    </div>
+                    <div class="scenaryIntro">
+                        <table class="info">
+                            <tr class="faciName">
+                                <td>Name</td>
+                                <td>facility name</td>
+                            </tr>
+                            <tr class="faciInfo">
+                                <td>Info</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                            </tr>
+                            <tr class="faciTime">
+                                <td>Time</td>
+                                <td>From 8:00 A.M. to 8:00 P.M.</td>
+                            </tr>
+                            <tr class="faciNotion">
+                                <td>Notion</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="booking">
+                <div class="formName">Booking Your Tickets Now!</div>
+                <form>
+                    <input type="datetime-local" id="ticketDate">
+                    <input type="number" id="ticketNum"  min="0" max="50" step="1" value="1">
+                    <button type="button" onclick="submitwindow()">Submit</button>
+                </form>
+                <div id="submitmodal"> 
+                    <div class="popup" id="bookingpage">
+                        <h1>BOOKING SUCCESSFULLY</h1>
+                        <br>
+                        <button type="button" class="cancel" onclick="closesubmit()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bottom">
+        <div id="contact-us">
+            <a class="btn" href="mailto:name@email.com">CONTACT US</a>
+        </div>
+        <div id="about-us">
+            <a class="btn" onclick="popupwindow()">ABOUT US</a>
+            <!-- about us popup window content -->
+            <div id="modal"> 
+                <div class="popup" id="aboutuspage">
+                    <h1>About Us</h1>
+                    <br>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                            <img src="/assets/pics/team1.png" alt="Yu Zhong" style="width:100%">
+                                <div class="container">
+                                    <h2>Yu Zhong</h2>
+                                    <p>Coder and Designer</p>
+                                    <p>Map page coder and designer.</p>
+                                    <p>m13545022224@163.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                            <img src="/assets/pics/team2.png" alt="Mika Shumway" style="width:100%">
+                                <div class="container">
+                                    <h2>Mika Shumway</h2>
+                                    <p>Leader, Coder and Designer</p>
+                                    <p>Home page coder and designer.</p>
+                                    <p>example@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="/assets/pics/team3.png" alt="Unknown Member" style="width:100%">
+                                <div class="container">
+                                    <h2>Unknown Member</h2>
+                                    <p>Coder and Designer</p>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                    <p>example@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="/assets/pics/team4.png" alt="Unknown Member" style="width:100%">
+                                <div class="container">
+                                    <h2>Unknown Member</h2>
+                                    <p>Coder and Designer</p>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                    <p>example@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cancel" onclick="closewindow()">Close</button>
+                </div>
+            </div>
+        </div>
+        <div id="shareSocial">
+            <a class="footer-link" href="https://www.linkedin.com/">
+                <i class="fa fa-share"></i>
+            </a>
+            <a class="footer-link" href="https://twitter.com/">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="footer-link" href="https://www.facebook.com/">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+        <p id="copyright">© web dev coursework.</p>
+    </footer>
+</body>
+</html>
