@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/b09913b6fb.js" crossorigin="anonymous"></script>
     <script src="js/sketch.js"></script>
     <link rel="stylesheet" type="text/css" href="css/websites.css"> 
-    <title>Guidance page of Pokemon theme park</title>
+    <title>Service page of Pokemon theme park</title>
 </head>
 <!-- This is the main content of the page -->
 <body>
@@ -15,13 +15,12 @@
     <header class="top">
         <h1>Pokemon Land</h1>
     </header>
-
     <!-- This is the navigation of the page -->
     <nav id="navlist">
             <img src="assets/pics/favicon.ico" alt="logo" sizes="" srcset="">
             <a href="index.html">Home</a>
-            <a href="#">Map Tourist</a>
-            <a href="services.html">Service</a>
+            <a href="map.html">Map Tourist</a>
+            <a href="#">Service</a>
         <!-- search bar right align -->
         <div id="searchBox" class="search">
             <form action="#">
@@ -32,52 +31,28 @@
             </form>
         </div>
     </nav>
-    <!-- This is the section of introducing all attractions in theme park including its location, hours of operation-->
+    <!-- This is the contact and feedback section of the theme park -->
     <section class="mid">
         <div class="left">
-            <!-- This is the section of theme park spots filtering -->
-            <div id="filter" class="dropdown">
-                <button class="dropdownBtn" onclick="myFunction()">Find Facilities</button>
-                <div id="peopleDropdown" class="dropdownContent">
-                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                    <a href="#rollercoaster">roller coaster</a>
-                    <a href="#pokemontrain">pokemon train</a>
-                    <a href="#gokart">go kart</a>
-                    <a href="#pokemondunk">pokemon dunk</a>
-                </div>
-            </div>
-
-            <!-- This is the section of theme park map. Providing maps and directions to the theme park-->
-            <div id="map">
-                <!-- This section might include maps and directions to the theme park, as well as information about parking and other transportation options. -->
-                <img src="assets/pics/chuttersnap-Dt8sn0KEguA-unsplash.jpg" alt="parkmap" usemap="#parkmap" >
-                <map name="parkmap">
-                    <area shape="circle" coords="500,500,147" href="#rollercoaster">
-                    <area shape="circle" coords="140,121,181" href="#pokemontrain">
-                    <area shape="circle" coords="355,352,37" href="#gokart">
-                    <area shape="circle" coords="761,528,47" href="#pokemondunk">
-                </map>
-            </div>
-
-            <!-- This is the section of part of theme park scenaries information. Showcasing the theme park's attractions-->
+            <!-- This is the section of part of theme park scenaries information. Showcasing the theme park's amenities-->
             <div id="scenaries">
-                <!-- This section of the website might include detailed descriptions and photos of the theme park's rides, games, shows, and other attractions. -->
-                <div id="attractions">
-                    <!-- This is the section of 'roller coaster' information. This includes descriptions, photos and videos of the theme park's attractions and amenities -->
-                    <div id="rollercoaster" class="scenaryCard">
+                <!-- This section might include information about the theme park's transport, restaurants, shops, restrooms, and other amenities. -->
+                <div id="amenities">
+                    <h2>Amenities</h2>
+                    <!-- This is the section of 'pokemon restaurants' information -->
+                    <div id="pokemonrestaurants" class="scenaryCard">
                         <div class="smallPic">
-                            <a target="_blank" href="assets/videos/roller coaster.mp4">
-                            <img src="assets/pics/matt-bowden-GZc4fnQsaWQ-unsplash.jpg" alt="roller coaster" width="200"></a>
+                            <img src="assets\pics\david-grandmougin-Am1io6KusFM-unsplash.jpg" alt="pokemon restaurants" width="200">
                         </div>
                         <div class="scenaryIntro">
                             <table class="info">
                                 <tr class="faciName">
                                     <td>Name</td>
-                                    <td>roller coaster</td>
+                                    <td>pokemon restaurants</td>
                                 </tr>
                                 <tr class="faciInfo">
                                     <td>Info</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                    <td>Pokemon theme park has a variety of restaurants, ranging from quick-service options to sit-down restaurants. You can find a mix of American, Asian, and other international cuisines at the park.</td>
                                 </tr>
                                 <tr class="faciTime">
                                     <td>Time</td>
@@ -90,20 +65,20 @@
                             </table>
                         </div>
                     </div>
-                    <!-- This is the section of 'go kart' information -->
-                    <div id="gokart" class="scenaryCard">
+                    <!-- This is the section of 'pokemon shops' information -->
+                    <div id="pokemonshops" class="scenaryCard">
                         <div class="smallPic">
-                            <a target="_blank" href="assets/videos/go kart.mp4"><img src="assets/pics/markus-spiske-u-s3EG1QUXw-unsplash.jpg" alt="go kart" width="200"></a>
+                            <img src="assets\pics\connor-dickson-A1I8g8NccNg-unsplash.jpg" alt="pokemon shops" width="200">
                         </div>
                         <div class="scenaryIntro">
                             <table class="info">
                                 <tr class="faciName">
                                     <td>Name</td>
-                                    <td>facility name</td>
+                                    <td>pokemon shops</td>
                                 </tr>
                                 <tr class="faciInfo">
                                     <td>Info</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                    <td>Pokemon theme park has a number of shops where you can purchase souvenirs, clothing, and other items. Many of the shops are themed to fit in with the park's attractions.</td>
                                 </tr>
                                 <tr class="faciTime">
                                     <td>Time</td>
@@ -116,46 +91,20 @@
                             </table>
                         </div>
                     </div>
-                    <!-- This is the section of 'pokemon dunk' information -->
-                    <div id="pokemondunk" class="scenaryCard">
+                    <!-- This is the section of 'pokemon restrooms' information -->
+                    <div id="pokemonrestrooms" class="scenaryCard">
                         <div class="smallPic">
-                            <a target="_blank" href="assets/video/pokemon dunk.mp4"><img src="assets/pics/bannon-morrissy-DfK0HXsfkDY-unsplash.jpg" alt="pokemon dunk" width="200"></a>
+                           <img src="assets\pics\lia-xKRv2abDDeg-unsplash.jpg" alt="pokemon restrooms" width="200">
                         </div>
                         <div class="scenaryIntro">
                             <table class="info">
                                 <tr class="faciName">
                                     <td>Name</td>
-                                    <td>facility name</td>
+                                    <td>pokemon restrooms</td>
                                 </tr>
                                 <tr class="faciInfo">
                                     <td>Info</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
-                                </tr>
-                                <tr class="faciTime">
-                                    <td>Time</td>
-                                    <td>From 8:00 A.M. to 8:00 P.M.</td>
-                                </tr>
-                                <tr class="faciNotion">
-                                    <td>Notion</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- This is the section of 'pokemon train' information -->
-                    <div id="pokemontrain" class="scenaryCard">
-                        <div class="smallPic">
-                            <a target="_blank" href="assets/videos/pokemon train.mp4"><img src="assets/pics/romeo-a-oWblyqYzuRI-unsplash.jpg" alt="pokemon train" width="200"></a>
-                        </div>
-                        <div class="scenaryIntro">
-                            <table class="info">
-                                <tr class="faciName">
-                                    <td>Name</td>
-                                    <td>facility name</td>
-                                </tr>
-                                <tr class="faciInfo">
-                                    <td>Info</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam facere est voluptates, eos perferendis architecto, molestiae commodi similique delectus, repudiandae esse tempora. Iure, porro! Laborum ducimus debitis inventore doloribus.</td>
+                                    <td>Pokemon theme park has restrooms located throughout the park for visitors to use.</td>
                                 </tr>
                                 <tr class="faciTime">
                                     <td>Time</td>
@@ -169,7 +118,20 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <!--  This is the contact info of the theme park-->
+            <div class="contact">
+                <!-- This section include contact information for the theme park, such as a contact form, email address, and phone number. -->
+                <div class="contact_info">
+                    <h2>Contact Information</h2>
+                    <p>
+                        The contact information for Pokemon theme park, a theme park located in Anaheim, California, United States is as follows: <br>
+                        <em><a href="tel:+(714) 781-4888">Phone: (714) 781-4888 </a></em> <br>
+                        <em><a href="mailto:m13545022224@163.com">Email: m13545022224@163.com </a></em> <br>
+                        <em><a href="http://google.map.com">Address: Pokemon theme park Resort, 1000 Pokemon theme park Dr, Anaheim, CA 92802 </a></em> <br>
+                        You can also follow Pokemon theme park on social media for updates and information. The park has active accounts on platforms like Facebook, Twitter, and Instagram.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="right">
